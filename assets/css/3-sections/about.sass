@@ -1,0 +1,64 @@
+h3
+ @extend %small-bold
+ color: $accent
+ text-align: center
+ padding-top: 50px 
+
+.face-lockup
+ max-width: 780px
+ +display(flex)
+ margin: 0 auto
+ +align-items(center)
+ +justify-content(space-around)
+
+ .face-img
+  +size(250px)
+  background: url(/assets/img/LOGO.png)
+  background-position: center
+  bacground-size: cover
+  border-radius: 50%
+  +order(3)
+
+ [class^="icon-"]
+  +size(100px)
+  border-radius: 50%
+
+  &.icon-1
+   order: 1
+  &.icon-2
+   order: 2
+  &.icon-3
+   order: 4
+  &.icon-4
+   order: 5
+
+@media screen and (max-width: 650px)
+ .face-lockup
+  display: block
+  text-align: center
+
+  div
+   display: inline-block
+  .face-img
+   display: block
+   background:
+    position: center center
+    repeat: no repeat
+   margin: 0 auto 30px
+  [class^="icon-"]
+   margin: 10px 9%
+
+
+
+.blurb
+ max-width: 620px
+ padding: 0 20px
+ margin: 50px auto
+ font-size: 24px
+ text-align: center
+ font-weight: 300
+
+
+
+
+
